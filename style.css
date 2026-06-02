@@ -1,17 +1,101 @@
+@font-face {
+  font-family: 'EternumFont';
+  src: url('fonts/your-font-name.ttf');
+}
+
 body {
-  background: #080808;
+  margin: 0;
+  background-color: #050505;
   color: #d8c27a;
-  font-family: Georgia, serif;
-  text-align: center;
-  padding: 60px;
+  font-family: 'EternumFont', Georgia, serif;
 }
 
-a {
+/* TOP BAR */
+
+.top-bar {
+  height: 70px;
+  background-color: #111111;
+  border-bottom: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.site-title {
+  font-size: 28px;
+  font-weight: bold;
   color: #f0d98a;
-  margin: 15px;
-  text-decoration: none;
+  letter-spacing: 2px;
 }
 
-a:hover {
+.top-nav a {
+  color: #f0d98a;
+  text-decoration: none;
+  margin-left: 35px;
+  font-size: 16px;
+}
+
+.top-nav a:hover {
+  color: white;
+}
+
+/* LANDING PAGE */
+
+.landing-page {
+  min-height: calc(100vh - 70px);
+  text-align: center;
+  padding: 80px 40px;
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+    url('images/backgrounds/home-background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.landing-page h1 {
+  font-size: 52px;
+  margin-bottom: 10px;
+}
+
+.landing-page p {
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+/* BOOK BUTTONS */
+
+.book-menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.book-button {
+  width: 220px;
+  text-decoration: none;
+  color: #f0d98a;
+  transition: transform 0.3s ease;
+}
+
+.book-button img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.book-button span {
+  display: block;
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.book-button:hover {
+  transform: scale(1.08);
+}
+
+.book-button:hover span {
   color: white;
 }
