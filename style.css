@@ -1,0 +1,17 @@
+body {
+  background: #080808;
+  color: #d8c27a;
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 60px;
+}
+
+a {
+  color: #f0d98a;
+  margin: 15px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
